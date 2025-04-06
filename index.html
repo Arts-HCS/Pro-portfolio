@@ -31,12 +31,15 @@
                 <button id="cerrar" class="header-sm-close-menu"><i class="fa-solid fa-xmark"></i></button>
                 <li class="nav-item"><a class="nav-link" href="#inicio">INICIO</a></li>
                 <li class="nav-item"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
-                <li class="nav-item"><a class="nav-link" href="">SERVICIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="./servicios.html">SERVICIOS</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     <section class="hero">
+        <div id="mensaje" class="form-message">
+            ¡Se ha enviado tu información!
+        </div>
         <div class="social-links">
             <ul class="links">
                 <li class="link"><a href="https://wa.me/525537213386" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a></li>
@@ -137,7 +140,7 @@
                     <div class="project-info">
                         <h3 class="project-title">Portafolio</h3>
                         <p class="project-description">Una plantilla de portafolio responsiva, creada para adaptarse a cualquier dispositivo y ser utilizada por cualquier persona.</p>
-                        <a class="project-link" href="/" target="_blank"><i class="fa-solid fa-code"></i>Ver código</a>
+                        <a class="project-link" href="https://github.com/Arts-HCS/Pro-portfolio/tree/master" target="_blank"><i class="fa-solid fa-code"></i>Ver código</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -179,22 +182,31 @@
                 <h3 class="section-title contact-title">CONTACTO</h3>
                 <p class="section-description">Siéntete libre de contactarme dejando tus datos en este formulario.
             </div>
-            <form class="form">
+            <form action="https://formsubmit.co/arturos.webdev@gmail.com" method="POST" class="form" onsubmit="guardarMensaje()">
                 <fieldset class="fieldset">
                     <legend>Información personal</legend>
                     <label class="form-label" for="name">Nombre</label>
-                    <input class="form-input" type="text" id="name" placeholder="Escribe tu nombre..." required>
+                    <input class="form-input" type="text" id="name" name="Nombre" placeholder="Escribe tu nombre..." required>
                     <label class="form-label" for="email">Correo electrónico</label>
-                    <input class="form-input" type="email" id="email" placeholder="Escribe tu correo electrónico..." required>
+                    <input class="form-input" type="email" id="email"  name="Correo electrónico" placeholder="Escribe tu correo electrónico..." required>
+                    <label class="form-label" for="serv">Tipo de <a class="service-link" href="./servicios.html">servicio</a></label>
+                    <select class="form-input" name="Tipo de servicio" id="serv">
+                        <option value="None">Elige tu servicio</option>
+                        <option value="Web a la medida">Web a la medida</option>
+                        <option value="Maquetacion exacta">Maquetación exacta</option>
+                        <option value="Diseño de logos">Optimización</option>
+                    </select>
                 </fieldset>
                 <fieldset class="fieldset">
                     <legend>Información de su negocio</legend>
                     <label class="form-label" for="business">Nombre de su negocio</label>
-                    <input class="form-input" type="text" id="business" placeholder="Escriba el nombre de su negocio">
+                    <input class="form-input" name="Nombre de empresa" type="text" id="business" placeholder="Escriba el nombre de su negocio">
                     <label class="form-label" for="description">Descripción de su negocio</label>
-                    <textarea class="form-textarea" id="description" placeholder="Escriba una breve descripción de su negocio" rows="5"></textarea>
+                    <textarea class="form-textarea" name="Descripción del negocio" id="description" placeholder="Escriba una breve descripción de su negocio" rows="5"></textarea>
                 </fieldset>
                 <button class="form-button" type="submit">ENVIAR</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </section>
@@ -208,10 +220,10 @@
                 <div class="footer-tr-content">
                     <h5 class="footer-title left">SOCIAL</h5>
                     <ul class="footer-links">
-                        <li class="footer-link"><i class="icon fa-brands fa-whatsapp"></i></li>
-                        <li class="footer-link"><i class="icon fa-brands fa-instagram"></i></li>
-                        <li class="footer-link"><i class="icon fa-regular fa-envelope"></i></li>
-                        <li class="footer-link"><i class="icon fa-brands fa-github"></i></li>
+                        <li class="footer-link"><a href="https://wa.me/525537213386" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a></li>
+                        <li class="footer-link"><a href="https://instagram.com/hector.s.c.a" target="_blank"><i class="icon fa-brands fa-instagram"></i></a></li>
+                        <li class="footer-link"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=arturos.webdev@gmail.com" target="_blank"><i class="icon fa-regular fa-envelope"></i></a></li>
+                        <li class="footer-link"><a href="https://github.com/Arts-HCS" target="_blank"><i class="icon fa-brands fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>

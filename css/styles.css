@@ -196,6 +196,18 @@ body{
     align-items: center;
 }
 
+.form-message{
+    display: none;
+    background-color: rgb(43, 99, 43);
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: #fff;
+    position: absolute;
+    top: 80px;
+    left: auto;
+}
+
 .hero .hero-content{
     text-align: center;
     height: 35%;
@@ -608,7 +620,7 @@ body{
 
 .form{
     width: 70%;
-    height: 870px;
+    min-height: 92vh;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
@@ -668,6 +680,10 @@ body{
     background-color: #fff;
 }
 
+.fieldset .service-link{
+    color: #48e;
+}
+
 .form .form-button{
     padding: 15px 40px;
     border-radius: 10px;
@@ -679,10 +695,10 @@ body{
     font-weight: 500;
 }
 
-
 .form .form-button:hover{
     box-shadow: 0 0 0 10px rgba(68, 136, 238, 0.352);
 }
+
 
 .footer{
     background-color: #111;
@@ -736,6 +752,12 @@ body{
 
 .footer-links .icon{
     font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-links .icon:hover{
+    color: #48e;
 }
 
 .footer-copyright{

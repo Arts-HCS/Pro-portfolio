@@ -61,7 +61,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /*background: linear-gradient(to bottom, rgba(68, 136, 238, 0.4), #F6F6F6);*/
     background-color: #fdfdfd;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-radius: 30px;

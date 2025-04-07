@@ -244,6 +244,10 @@ body{
     padding: 30px;
 }
 
+.v-card.lg-card{
+    height: 550px;
+}
+
 .v-card:hover{
     background-color: rgb(57, 60, 152);
     transform: translateY(-10px);
@@ -269,6 +273,10 @@ body{
     color: #dedede;
     line-height: 1.6;
     text-align: justify;
+}
+
+.v-text.sm-text{
+    font-size: 16px;
 }
 
 .table{

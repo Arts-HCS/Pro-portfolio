@@ -30,6 +30,7 @@ body{
     color: var(--black-color);
     font-weight: 400;
     margin-top: 10vh;
+    scroll-margin-top: 50px;
 }
 
 .header{
@@ -1062,6 +1063,7 @@ body{
         width: 100%;
         margin-top: -60px;
         min-height: 85vh;
+        padding-bottom: 0;
     }
     .form legend{
         font-size: 16px;
@@ -1090,8 +1092,5 @@ body{
         text-align: center;
 
     }
-
-
-
 
 }

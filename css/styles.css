@@ -983,6 +983,9 @@ body{
 }
 
 @media screen and (max-width: 430px){
+    body{
+        margin-top: 8vh;
+    }
     .navbar .logo{
         font-size: 19px;
         gap: 0;
@@ -1049,12 +1052,16 @@ body{
         background: none;
         padding: 8% 0;
     }
+    .contact-content .section-header .section-description{
+        width: 80%;
+    }
 
     .form{
         background-color: transparent;
         box-shadow: none;
         width: 100%;
         margin-top: -60px;
+        min-height: 85vh;
     }
     .form legend{
         font-size: 16px;
@@ -1081,6 +1088,7 @@ body{
         min-height: 10vh;
         padding-bottom: 20px;
         text-align: center;
+
     }
 
 

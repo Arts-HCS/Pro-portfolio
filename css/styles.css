@@ -647,7 +647,6 @@ body{
     box-shadow: 0 0 0 10px rgba(68, 136, 238, 0.352);
 }
 
-
 .footer{
     background-color: #111;
     padding: 3% 10%;
@@ -932,4 +931,159 @@ body{
         padding: 15px 30px;
         font-size: 16px;
     }
+}
+
+@media screen and (max-width: 600px){
+    .hero .hero-content .hero-title{
+        font-size: 35px;
+    }
+    .hero .hero-content .hero-description{
+        font-size: 17px;
+    }
+    .hero .hero-content .hero-button{
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+    .section-header .section-title{
+        font-size: 30px;
+    }
+    .section-header .section-title::before{
+        left: 24%;
+        width: 70px;
+    }
+    .section-header .section-description{
+        font-size: 16.5px;
+    }
+    .about{
+        border-bottom: none;
+        box-shadow: none;
+    }
+    .about-content{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .about-content .certif-card{
+        height: 250px;
+    }
+    .footer{
+        min-height: 30vh;
+    }
+    .footer-title{
+        font-size: 20px;
+    }
+    .footer-description{
+        font-size: 13px;
+    }
+    .footer-links .icon{
+        font-size: 27px;
+    }
+    .footer-copyright{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .navbar .logo{
+        font-size: 19px;
+        gap: 0;
+    }
+    .navbar .logo::before{
+        bottom: 15px;
+        left: 60px;
+    }
+    .navbar .logo .logo-image{
+        width: 60px;
+        height: 60px;
+    }
+    .header-sm-menu{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .hero .hero-content{
+        max-width: 80%;
+    }
+    .hero .hero-content .hero-title{
+        font-size: 40px;
+    }
+    .hero .hero-content .hero-description{
+        font-size: 18px;
+    }
+    .hero .hero-content .hero-button{
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    .hero .social-links{
+        width: 65%;
+        height: 50px;
+        left: auto;
+        top: 30px;
+        border-radius: 10px;
+    }
+    .hero .social-links .links{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .section-header .section-description{
+        width: 100%;
+    }
+    .about-content .certif-card{
+        height: 320px;
+    }
+    .project-card .project-title{
+        font-size: 18px;
+    }
+    .project-card .project-description{
+        font-size: 14px
+    }
+    .project-info .project-link{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .project-info .links .project-link{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    .contact{
+        border-top: none;
+        background: none;
+        padding: 8% 0;
+    }
+
+    .form{
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        margin-top: -60px;
+    }
+    .form legend{
+        font-size: 16px;
+    }
+    .fieldset .form-label{
+        font-size: 16px;
+    }
+    .fieldset .form-input{
+        font-size: 15px;
+    }
+    .fieldset .form-textarea{
+        font-size: 15px;
+    }
+    .form .form-button{
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+
+    .footer-top-content{
+        display: none;
+    }
+
+    .footer{
+        min-height: 10vh;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+
 }

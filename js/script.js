@@ -26,3 +26,15 @@ function cerrarModal() {
 function guardarMensaje() {
     sessionStorage.setItem("formEnviado", "true");
 }
+
+window.onload = function () {
+    if (sessionStorage.getItem("formEnviado") === "true") {
+      const mensaje = document.getElementById("mensaje");
+      mensaje.style.display = "block";
+
+      setTimeout(() => {
+        mensaje.style.display = "none";
+        sessionStorage.removeItem("formEnviado");
+      }, 3000);
+    }
+};

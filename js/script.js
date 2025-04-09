@@ -1,21 +1,15 @@
 const nav = document.getElementById('nav');
 const abrir = document.getElementById('abrir')
-const cerrar = document.getElementById('cerrar')
+const botonesCerrar = document.querySelectorAll('.cerrar');
 
 abrir.addEventListener('click', () =>{
     nav.classList.add("visible")
 })
 
-cerrar.addEventListener('click', ()=>{
-    nav.classList.remove('visible')
-})
-
-document.addEventListener('click', (e) => {
-    if (nav.classList.contains('visible') &&
-        !nav.contains(e.target) &&
-        !abrir.contains(e.target)) {
-      nav.classList.remove('visible');
-    }
+botonesCerrar.forEach(boton => {
+    boton.addEventListener('click', () => {
+      nav.classList.remove("visible")
+    });
 });
 
 function abrirModal(imagenSrc) {
@@ -32,15 +26,3 @@ function cerrarModal() {
 function guardarMensaje() {
     sessionStorage.setItem("formEnviado", "true");
 }
-
-window.onload = function () {
-    if (sessionStorage.getItem("formEnviado") === "true") {
-      const mensaje = document.getElementById("mensaje");
-      mensaje.style.display = "block";
-
-      setTimeout(() => {
-        mensaje.style.display = "none";
-        sessionStorage.removeItem("formEnviado");
-    }, 3000);
-    }
-};

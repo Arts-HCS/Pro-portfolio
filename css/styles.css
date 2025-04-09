@@ -432,14 +432,6 @@ body{
     max-height: 80%;
 }
 
-.cerrar {
-    position: absolute;
-    top: 70px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
 
 .no-scroll {
     overflow: hidden;

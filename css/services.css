@@ -501,7 +501,7 @@ body{
     .table tr td,th{
         vertical-align: middle;
         text-align: left;
-        font-size: 13.5px;
+        font-size: 14px;
     }
     .table2 thead {
         display: none;
@@ -548,6 +548,7 @@ body{
         width: 90%;
         font-size: 16px;
     }
+    
     .detail-v-cards .v-card.lg-card .table{
         width: 80%;
         border-spacing: 5px;

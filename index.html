@@ -190,7 +190,7 @@
                     <label class="form-label" for="email">Correo electrónico</label>
                     <input class="form-input" type="email" id="email"  name="Correo electrónico" placeholder="Escribe tu correo electrónico..." required>
                     <label class="form-label" for="serv">Tipo de <a class="service-link" href="./servicios.html">servicio</a></label>
-                    <select class="form-input" name="Tipo de servicio" id="serv">
+                    <select class="form-input" name="Tipo de servicio" id="serv" required>
                         <option value="None">Elige tu servicio</option>
                         <option value="Web a la medida">Web a la medida</option>
                         <option value="Maquetacion exacta">Maquetación exacta</option>
@@ -200,9 +200,9 @@
                 <fieldset class="fieldset">
                     <legend>Información de su negocio</legend>
                     <label class="form-label" for="business">Nombre de su negocio</label>
-                    <input class="form-input" name="Nombre de empresa" type="text" id="business" placeholder="Nombre de su negocio">
+                    <input class="form-input" name="Nombre de empresa" type="text" id="business" placeholder="Nombre de su negocio" required>
                     <label class="form-label" for="description">Descripción de su negocio</label>
-                    <textarea class="form-textarea" name="Descripción del negocio" id="description" placeholder="Escriba una breve descripción de su negocio" rows="5"></textarea>
+                    <textarea class="form-textarea" name="Descripción del negocio" id="description" placeholder="Escriba una breve descripción de su negocio" rows="5" required></textarea>
                 </fieldset>
                 <button class="form-button" type="submit">ENVIAR</button>
                 <input type="hidden" name="_next" value="https://arts-hcs.github.io/Pro-portfolio/">

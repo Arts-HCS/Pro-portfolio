@@ -150,8 +150,8 @@ body{
 }
 
 .details-content{
-    width: 100%;
     display: flex;
+    width: 100%;
     gap: 30px;
 }
 
@@ -170,6 +170,7 @@ body{
     flex: 1;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .detail-card {
@@ -294,4 +295,275 @@ body{
 
 .table2 tr td{
     border: none;
+}
+
+@media screen and (max-width: 1180px){
+    .small-hero-content .hero-title{
+        font-size: 35px;
+    }
+    .small-hero-content .hero-description{
+        font-size: 19px;
+    }
+    .services{
+        padding: 3% 4%;
+    }
+    .service-card{
+        width: 280px;
+        height: 400px;
+        padding: 20px 30px;
+    }
+    .service-card .service-icon{
+        border: 1.5px solid #343434;
+    }
+    .service-card .service-icon .fa-solid{
+        font-size: 24px;
+    }
+    .card-title{
+        font-size: 24px;
+    }
+    .service-card .card-description{
+        font-size: 15.5px;
+    }
+    .service-card .start-btn{
+        font-size: 15.5px;
+    }
+    .detail-cards{
+        flex: 0.8;
+    }
+    .detail-v-cards{
+        flex: 1.1;
+    }
+    .v-card.lg-card{
+        height: 420px;
+    }
+    .v-card.v-card-lg{
+        height: 400px;
+    }
+    .details-title{
+        font-size: 33px;
+    }
+    .detail-card{
+        height: 320px;
+    }
+    .detail-card-title{
+        font-size: 21px;
+    }
+    .detail-card-content{
+        font-size: 15.5px;
+    }
+    .v-title{
+        font-size: 21px;
+    }
+    .v-text{
+        font-size: 15px;
+    }
+    .v-text.sm-text{
+        font-size: 15px;
+    }
+
+    .table tr td,th{
+        font-size: 14.5px;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    .small-hero-content .hero-title{
+        font-size: 32px;
+    }
+    .small-hero-content .hero-description{
+        font-size: 18px;
+    }
+    .services-cards{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .service-card{
+        width: 60%;
+        height: 320px;
+        padding: 20px 30px;
+    }
+    .service-card .service-icon{
+        border: 1.5px solid #343434;
+    }
+    .service-card .service-icon .fa-solid{
+        font-size: 24px;
+    }
+    .card-title{
+        font-size: 22px;
+    }
+    .service-card .card-description{
+        font-size: 16px;
+    }
+    .service-card .start-btn{
+        padding: 12px 35px;
+        font-size: 15px;
+    }
+    .details-content{
+        flex-direction: column;
+    }
+    .detail-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .detail-v-cards{
+        flex: 1;
+    }
+    .details-title{
+        font-size: 30px;
+    }
+    .detail-card{
+        height: fit-content;
+        width: 65%;
+    }
+    .detail-card-title{
+        font-size: 21px;
+    }
+    .detail-card-content{
+        font-size: 15.5px;
+    }
+    .v-title{
+        font-size: 20px;
+    }
+    .v-text{
+        font-size: 14.5px;
+    }
+    .v-text.sm-text{
+        font-size: 14.5px;
+    }
+    .v-card.lg-card{
+        height: fit-content
+    }
+    .v-card.v-card-lg{
+        height: fit-content;
+    }
+    .table tr td,th{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    .small-hero .small-hero-content{
+        width: 80%;
+    }
+    .small-hero-content .hero-title{
+        font-size: 30px;
+    }
+    .small-hero-content .hero-description{
+        font-size: 17px;
+    }
+    .service-card{
+        width: 80%;
+        height: fit-content;
+    }
+    .service-card .service-icon{
+        border: 1.5px solid #343434;
+    }
+    .service-card .service-icon .fa-solid{
+        font-size: 22px;
+    }
+    .card-title{
+        font-size: 21px;
+    }
+    .service-card .card-description{
+        font-size: 15.5px;
+        text-align: left;
+    }
+    .service-card .start-btn{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .details-title{
+        font-size: 27px;
+    }
+    .detail-card{
+        height: fit-content;
+        width: 90%;
+    }
+    .detail-card-title{
+        font-size: 20px;
+    }
+    .detail-card-content{
+        font-size: 15px;
+    }
+    
+    .v-title{
+        font-size: 20px;
+    }
+    .v-text{
+        font-size: 14px;
+    }
+    .v-text.sm-text{
+        font-size: 14px;
+    }
+    .table tr td,th{
+        vertical-align: middle;
+        text-align: left;
+        font-size: 13.5px;
+    }
+    .table2 thead {
+        display: none;
+    }
+    
+    .table2 tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+    
+    .table2 td {
+        display: block;
+        padding: 0;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    
+    .table2 td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 420px){
+    body{
+        margin-top: 6vh;
+    }
+    .details-title{
+        font-size: 24px;
+    }
+    .small-hero .small-hero-content{
+        width: 90%;
+    }
+    .small-hero-content .hero-title{
+        font-size: 26px;
+    }
+    .small-hero-content .hero-description{
+        width: 90%;
+        font-size: 16px;
+    }
+    .detail-v-cards .v-card.lg-card .table{
+        width: 80%;
+        border-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 345px){
+    .detail-v-cards .v-card.lg-card .table{
+        width: 50%;
+    }
+    .details-title{
+        font-size: 23px;
+    }
+    .table tr td,th{
+        font-size: 13px;
+        padding: 4px;
+    }
+
 }

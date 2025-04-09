@@ -10,6 +10,14 @@ cerrar.addEventListener('click', ()=>{
     nav.classList.remove('visible')
 })
 
+document.addEventListener('click', (e) => {
+    if (nav.classList.contains('visible') &&
+        !nav.contains(e.target) &&
+        !abrir.contains(e.target)) {
+      nav.classList.remove('visible');
+    }
+});
+
 function abrirModal(imagenSrc) {
     document.getElementById("imgGrande").src = imagenSrc;
     document.getElementById("miModal").style.display = "flex";

@@ -212,6 +212,23 @@ body{
     gap: 25px;
 }
 
+.hero .translate-link .flag-image{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.hero .translate-link .flag-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
 .links .icon{
     cursor: pointer;
     font-size: 35px;
@@ -1019,6 +1036,11 @@ body{
         flex-direction: row;
         gap: 20px;
     }
+    .hero .translate-link .flag-image{
+        top: auto;
+        bottom: 20px;
+    }
+
     .section-header .section-description{
         width: 100%;
     }

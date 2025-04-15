@@ -547,13 +547,13 @@ body{
         margin-top: 6vh;
     }
     .small-hero .small-hero-content{
-        width: 70%;
+        width: 90%;
     }
     .small-hero-content .hero-title{
-        font-size: 28px;
+        font-size: 26px;
     }
     .small-hero-content .hero-description{
-        font-size: 16px;
+        font-size: 15px;
     }
     .details-title{
         font-size: 24px;
@@ -574,8 +574,23 @@ body{
     .v-title{
         font-size: 20px;
     }
-    .table tr td,th{
-        vertical-align: middle;
+    .table-stack,
+    .table-stack tr,
+    .table-stack td {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .table-stack tr {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .table-stack td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding: 8px;
         text-align: left;
         font-size: 13px;
     }
@@ -594,22 +609,3 @@ body{
 
 }
 
-@media screen and (max-width: 345px){
-    .detail-v-cards .v-card.lg-card .table{
-        width: 50%;
-    }
-    .details-title{
-        font-size: 23px;
-    }
-    .table tr td,th{
-        font-size: 13px;
-        padding: 4px;
-    }
-    .table2 td {
-        display: block;
-        padding: 0;
-        margin-bottom: 15px;
-        font-size: 15px;
-    }
-
-}

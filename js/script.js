@@ -1,6 +1,11 @@
 const nav = document.getElementById('nav');
 const abrir = document.getElementById('abrir')
 const botonesCerrar = document.querySelectorAll('.cerrar');
+const btn = document.getElementById('translate-btn');
+
+btn.addEventListener('click', () => {
+  btn.classList.toggle('active');
+});
 
 abrir.addEventListener('click', () =>{
     nav.classList.add("visible")

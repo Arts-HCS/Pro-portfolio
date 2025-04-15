@@ -270,6 +270,22 @@ body{
     align-items: center;
 }
 
+.translate-btn.active {
+    height: 100px;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.translate-btn.active .fa-language {
+    display: none;
+}
+
+.translate-btn.active .language-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .links .icon{
@@ -1081,7 +1097,7 @@ body{
     }
     .hero .translate-btn{
         top: auto;
-        bottom: 20px;
+        bottom: 40px;
     }
     .section-header .section-description{
         width: 100%;

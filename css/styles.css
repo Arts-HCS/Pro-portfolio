@@ -917,7 +917,7 @@ body{
         font-size: 14.5px;
     }
     .about{
-        min-height: 150vh;
+        min-height: 130vh;
     }
     .about-content{
         gap: 25px;
@@ -971,7 +971,7 @@ body{
 
 @media screen and (max-width: 680px){
     .about{
-        min-height: 160vh;
+        min-height: 145vh;
     }
 
     .certif-card{
